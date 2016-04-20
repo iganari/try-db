@@ -1,4 +1,4 @@
-# 使いかた
+# How to Use
 
 ```
 $ vagrant up
