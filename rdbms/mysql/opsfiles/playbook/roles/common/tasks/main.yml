@@ -1,0 +1,29 @@
+---
+
+- name: install packages from base
+  apt: pkg="{{item}}" state=latest
+  with_items:
+  - curl
+  - openssl
+  - tree
+  - telnet
+  - nkf
+  - mlocate
+  - expect
+  - dstat
+  - vim
+  - git
+  tags: packages base
+
+- name: replace rsyslog.conf
+  copy: >
+    src=roles/common/templates/50-default.conf.j2
+    dest=/etc/rsyslog.d/50-default.conf 
+  notify: restart rsyslog
+
+- name: change localtime to JST
+  file: >
+    src=/usr/share/zoneinfo/Asia/Tokyo
+    dest=/etc/localtime
+    force=yes
+    state=link

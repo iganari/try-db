@@ -1,0 +1,6 @@
+---
+- hosts: web-servers
+  roles:
+    - common
+    - nginx
+    - php56

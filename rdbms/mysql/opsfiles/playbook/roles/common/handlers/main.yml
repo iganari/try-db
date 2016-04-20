@@ -1,0 +1,10 @@
+---
+# 
+
+## - name: restart ntp
+##   service: name=ntpd state=restarted
+- name: restart rsyslog
+  service: name=rsyslog state=restarted
+
+- name: restart network
+  service: name=network state=restarted
