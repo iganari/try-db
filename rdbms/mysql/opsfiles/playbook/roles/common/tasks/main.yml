@@ -13,6 +13,7 @@
   - dstat
   - vim
   - git
+  - unzip
   tags: packages base
 
 - name: replace rsyslog.conf
