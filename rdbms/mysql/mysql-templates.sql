@@ -1,11 +1,11 @@
 CREATE DATABASE postdata CHARACTER SET utf8;
-CREATE TABLE    postdata.all(col1 int, 
-                             col2 varchar(30),
-                             col3 varchar(30),
-                             col4 varchar(30),
-                             col5 varchar(30),
-                             col6 varchar(30),
-                             col7 varchar(30),
-                             col8 varchar(30),
-                             col9 varchar(30)
-                            );
+CREATE TABLE    postdata.alldata (national_local_government_code int, 
+                                  postal_code_old                varchar(30),
+                                  postal_code_new                varchar(30) NOT NULL PRIMARY KEY,
+                                  prefectures_katakana           varchar(30),
+                                  city_katakana                  varchar(30),
+                                  town_area_katakana             varchar(30),
+                                  prefectures_kanji              varchar(30),
+                                  city_kanji                     varchar(30),
+                                  town_area_kanji                varchar(30)
+                                 );
