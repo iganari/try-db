@@ -28,3 +28,6 @@
     dest=/etc/localtime
     force=yes
     state=link
+
+- name: setting japanese
+  shell: echo 'LANG="en_US.UTF-8"' > /etc/default/locale

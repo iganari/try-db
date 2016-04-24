@@ -1,5 +1,5 @@
 ---
 - hosts: db-servers
   roles:
-#     - common
+    - common
     - mysql
