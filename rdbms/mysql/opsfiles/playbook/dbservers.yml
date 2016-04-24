@@ -2,4 +2,4 @@
 - hosts: db-servers
   roles:
     - common
-#     - mysql
+    - mysql
