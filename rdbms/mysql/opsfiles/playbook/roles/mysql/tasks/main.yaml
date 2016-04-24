@@ -4,5 +4,18 @@
   with_items:
   - mysql-server
   tags: mysql
-  notify: start mysql
+#   notify: start mysql
 
+# - name: smlink
+#   file: >
+#     src=/srv/try-db-mysql/opsfiles/etc/mysql/my.cnf
+#     dest=/etc/mysql/my.cnf
+#     force=yes
+#     state=link
+
+# - name: smlink2
+#   file: >
+#     src=/srv/try-db-mysql/opsfiles/etc/mysql/mysql.conf.d/mysqld.cnf
+#     dest=/etc/mysql/mysql.conf.d/mysqld.cnf
+#     force=yes
+#     state=link
